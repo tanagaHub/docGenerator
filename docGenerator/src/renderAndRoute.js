@@ -3,7 +3,7 @@ import { videoTemplate } from './views/video.js'
 import { home } from './views/hopmepage.js'
 import { infoTemplate } from './views/info.js'
 import { thanks } from './views/thanks.js'
-import page from '../node_modules/page/page.mjs';
+import page from '//unpkg.com/page/page.mjs';
 import { render } from 'https://unpkg.com/lit-html?module';
 
 
