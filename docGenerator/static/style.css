@@ -1,0 +1,147 @@
+.typing-demo {
+    width: 45ch;
+    animation: typing 1s steps(20), .2s step-end infinite alternate;
+    white-space: nowrap;
+
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+
+body {
+    background-image: url('/assets/22.jpg');
+    text-align: center;
+    color: white;
+   
+}
+
+::placeholder {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+
+input {
+     border-radius: 4px;
+    border-style: none;
+    padding: 4px;
+    margin: 8px;
+    outline:none;
+    box-shadow: 3px 3px grey
+}
+
+input:focus { 
+border: 2px solid rgb(49, 255, 30); 
+box-shadow: 0px 0px  grey;
+}
+
+label {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#date {
+    color: white
+}
+
+.button {
+    background-color: rgb(49, 255, 30);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px #000000;
+    max-width: 340px;
+    padding: 5px 45px 5px 45px;
+    border-radius: 12px;
+    margin: 10px;
+    font-size: larger;
+}
+.button:hover {
+    background-color: rgb(80, 78, 78);
+}
+
+  
+nav  {
+margin-top: 30px;
+margin-bottom: 40px;
+     
+}
+nav a {
+    border: 1px solid rgb(49, 255, 30);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: large;
+     
+}
+.active{
+    background-color: rgb(49, 255, 30);
+    border: 1px solid black;
+  
+}
+
+nav a:hover{
+    background-color: rgb(49, 255, 30);
+    box-shadow: 4px 4px 3px black;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    text-align: center;
+    padding: 3px;
+  }
+  .footer a {
+    color: rgb(49, 255, 30);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .home p{
+    background-color: rgba(0, 0, 0, 0.397);
+    margin: auto;
+    margin-top: 10px;
+   max-width: 300px;
+    padding: 10px;
+    color: rgba(49, 255, 30, 0.877);
+  
+  }
+
+  #info p {
+color: white;
+background-color: rgba(0, 0, 0, 0.397);
+    margin: auto;
+    margin-top: 10px;
+max-width: 330px;
+    padding: 10px;
+  }
+  #info a {
+      color: rgb(49, 255, 30);
+      text-decoration: none;
+  }
+  
+  
+
+
+
+ 
+  
+ 
+  
+  
+ 
+  
+   
+   
+
+ 

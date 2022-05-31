@@ -1,0 +1,33 @@
+import { html, render } from 'https://unpkg.com/lit-html?module';
+//import {active} from '../activeLink.js'
+
+const arr = [
+  { h: "https://portal.registryagency.bg/CR/Reports/VerificationPersonOrg", text: "nakata" , target: "_blank"},
+  { h: `/info/catalog2`, text: "catalog 2222" },
+  { h: `/info/catalog3`, text: "catalog 3333" }
+]
+function infoTemplate() {
+  
+  return html` 
+ <p>This is main info page</p>
+      ${arr.map(item => html`<a  id="${item.h.substring(1)}" href="${item.h}" target=${item.target} > <h4>${item.text}</h4></a>`)}
+ 
+`
+}
+
+const data = {"catalog2" : "ivan", "catalog3" : "varna"}
+  function catalog(con) {
+    const main = document.querySelector('main')
+    const id = con.params.id
+    con.product = data
+      
+
+    const kur = () => html` this is product with <h2>item ${id} it is ${con.product[id]}</h2> `
+    render(kur(con), main)
+    console.log(con)
+
+} 
+
+export {infoTemplate, catalog}
+
+ 
