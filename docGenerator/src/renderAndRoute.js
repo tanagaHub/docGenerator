@@ -16,6 +16,8 @@ page('/info', () => render(infoTemplate(), main));
 //page('/info/:id',  catalog);
 page('/video', () => render(videoTemplate(), main));
 page('/thanks', () => render(thanks(), main));
+page('/nakata', () => window.location.href = "https://www.brs-industry.eu");
+
 
 page()
 
